@@ -37,7 +37,6 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
 
   async function handleToggleFavorite() {
     const favorites = await AsyncStorage.getItem('favorites');
-    console.log(favorites);
 
     let favoritesArray = [];
     
